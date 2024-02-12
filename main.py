@@ -12,7 +12,6 @@ amount = 0
 @bot.message_handler(content_types=['text'])
 def start(message):
     if message.text == "/start":
-        user_id = message.from_user.id
         bot.send_message(message.chat.id, "Добро пожаловать в нашего бота!")
         bot.send_message(message.chat.id, 'Вас приветствует конвертер валюты, '
                                           'для того чтобы начать введите /convert')
